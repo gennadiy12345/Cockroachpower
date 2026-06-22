@@ -1,0 +1,369 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Cockroach Power Institute™</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#0f1117;
+    color:#fff;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#121826,#232d4a);
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    opacity:.8;
+    margin-top:10px;
+}
+
+.badges{
+    margin-top:20px;
+}
+
+.badge{
+    display:inline-block;
+    margin:5px;
+    padding:8px 14px;
+    border-radius:999px;
+    background:#1f2937;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+.card{
+    background:#161b22;
+    border:1px solid #2b3444;
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:25px;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+input,select,button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+input,select{
+    background:#222b38;
+    color:white;
+}
+
+button{
+    background:#f59e0b;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:scale(1.02);
+}
+
+.result{
+    margin-top:15px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #2b3444;
+    padding:10px;
+    text-align:left;
+}
+
+th{
+    background:#1f2937;
+}
+
+.certificate{
+    text-align:center;
+    padding:40px;
+    border:4px solid gold;
+    border-radius:20px;
+    background:#1b1b10;
+}
+
+.certificate h3{
+    color:gold;
+    font-size:2rem;
+}
+
+.warning{
+    color:#ff6666;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    opacity:.6;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🏛 International Cockroach Power Institute™</h1>
+    <p>Global Leader in Alternative Biological Power Standards</p>
+
+    <div class="badges">
+        <span class="badge">ISO 7355000 Certified</span>
+        <span class="badge">Rat Power Standard v2.6</span>
+        <span class="badge">Cockroach Engineering Approved</span>
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>🐴 Power Converter</h2>
+
+        <input type="number" id="value" placeholder="Enter amount">
+
+        <select id="from">
+            <option value="horse">Horsepower</option>
+            <option value="rat">Rat Power</option>
+            <option value="roach">Cockroach Power</option>
+        </select>
+
+        <select id="to">
+            <option value="horse">Horsepower</option>
+            <option value="rat">Rat Power</option>
+            <option value="roach">Cockroach Power</option>
+        </select>
+
+        <button onclick="convertPower()">Convert</button>
+
+        <div class="result" id="result">
+            Ready for conversion
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>📊 Rat Power Index™</h2>
+
+        <table>
+            <tr><th>Subject</th><th>Estimated Rat Power</th></tr>
+            <tr><td>Human Walking</td><td>0.13 RP</td></tr>
+            <tr><td>Average Dog</td><td>3.5 RP</td></tr>
+            <tr><td>Horse</td><td>497 RP</td></tr>
+            <tr><td>Elephant</td><td>2400 RP</td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>🚗 Vehicle Database</h2>
+
+        <table>
+            <tr>
+                <th>Vehicle</th>
+                <th>Horsepower</th>
+                <th>Rat Power</th>
+                <th>Cockroach Power</th>
+            </tr>
+
+            <tr>
+                <td>Bugatti Chiron</td>
+                <td>1500</td>
+                <td>745,500</td>
+                <td>11.03 Billion</td>
+            </tr>
+
+            <tr>
+                <td>Tesla Model S Plaid</td>
+                <td>1020</td>
+                <td>506,940</td>
+                <td>7.50 Billion</td>
+            </tr>
+
+            <tr>
+                <td>Boeing 747</td>
+                <td>58,000</td>
+                <td>28.8 Million</td>
+                <td>426.59 Billion</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>🪳 Cockroach Swarm Calculator</h2>
+
+        <select id="machine">
+            <option value="7355000000">Tesla Model S</option>
+            <option value="11032500000">Bugatti Chiron</option>
+            <option value="426590000000">Boeing 747</option>
+            <option value="51485000000000">Space Rocket</option>
+        </select>
+
+        <button onclick="calcSwarm()">
+            Calculate Required Cockroach Power
+        </button>
+
+        <div class="result" id="swarmResult"></div>
+    </div>
+
+    <div class="card">
+        <h2>📚 Research Findings</h2>
+
+        <p>
+            Our leading bio-mechanical research team has determined:
+        </p>
+
+        <br>
+
+        <ul>
+            <li>1 Horsepower = 497 Rat Power</li>
+            <li>1 Horsepower = 7,355,000 Cockroach Power</li>
+            <li>1 Boeing 747 ≈ 426.59 Billion Cockroach Power</li>
+            <li>1 Formula 1 Car ≈ 7 Billion Cockroach Power</li>
+        </ul>
+    </div>
+
+    <div class="card certificate">
+        <h3>ISO 7355000</h3>
+
+        <p>
+            International Cockroach Power Standard
+        </p>
+
+        <br>
+
+        <p>
+            Certified Biological Energy Conversion System
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>❓ FAQ</h2>
+
+        <p><strong>Is Cockroach Power a real unit?</strong></p>
+        <p>Not yet.</p>
+
+        <br>
+
+        <p><strong>Who created this standard?</strong></p>
+        <p>Leading experts in experimental insect energetics.</p>
+
+        <br>
+
+        <p><strong>Is this scientifically accurate?</strong></p>
+        <p>Scientifically adjacent.</p>
+    </div>
+
+    <div class="card">
+        <h2>🚨 Emergency Roach Overdrive</h2>
+
+        <button onclick="overdrive()">
+            ACTIVATE OVERDRIVE
+        </button>
+
+        <div class="warning" id="warning"></div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 International Cockroach Power Institute™
+</footer>
+
+<script>
+
+const rates = {
+    horse:1,
+    rat:497,
+    roach:7355000
+};
+
+const names = {
+    horse:"Horsepower",
+    rat:"Rat Power",
+    roach:"Cockroach Power"
+};
+
+function convertPower(){
+
+    const value =
+        parseFloat(document.getElementById("value").value);
+
+    const from =
+        document.getElementById("from").value;
+
+    const to =
+        document.getElementById("to").value;
+
+    if(isNaN(value)){
+        document.getElementById("result").innerText =
+            "Please enter a number.";
+        return;
+    }
+
+    const hp = value / rates[from];
+    const result = hp * rates[to];
+
+    document.getElementById("result").innerText =
+        value.toLocaleString() + " " +
+        names[from] + " = " +
+        result.toLocaleString() + " " +
+        names[to];
+}
+
+function calcSwarm(){
+
+    const amount =
+        Number(document.getElementById("machine").value);
+
+    document.getElementById("swarmResult").innerText =
+        amount.toLocaleString() +
+        " Cockroach Power required.";
+}
+
+function overdrive(){
+
+    document.getElementById("warning").innerHTML =
+        "⚠ WARNING ⚠<br><br>" +
+        "Cockroach swarm exceeds safe engineering limits.<br><br>" +
+        "Estimated Output:<br>" +
+        "999,999,999,999 Cockroach Power";
+}
+</script>
+
+</body>
+</html>
+```
